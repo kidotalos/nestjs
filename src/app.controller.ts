@@ -2,7 +2,7 @@ import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
 
 // どんなURLがきたらどのような処理をかえすか
-@Controller('hello')
+@Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 

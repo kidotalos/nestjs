@@ -21,6 +21,7 @@ export class UsersController {
     return this.usersService.findAll();
   }
 
+  // これがapi的な感じ。１つの機能やけん
   @Get(':username')
   @UseGuards(AuthGuard('jwt'))
   //   userが配列で帰ってくる
