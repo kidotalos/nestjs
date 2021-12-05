@@ -19,4 +19,8 @@ export class BlogsService {
   async findAll() {
     return await this.blogModel.find().exec();
   }
+  async findOne(blogId: number) {
+    const blog = await this.blogModel.findOne({ blogId });
+    return blog;
+  }
 }
