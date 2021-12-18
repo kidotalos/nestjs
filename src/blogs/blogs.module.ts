@@ -5,7 +5,7 @@ import { BlogsService } from './blogs.service';
 import { BlogSchema } from './schemas/blog.schema';
 
 @Module({
-  imports: [MongooseModule.forFeature([{name:'Blog', schema:BlogSchema}])],
+  imports: [MongooseModule.forFeature([{ name: 'Blog', schema: BlogSchema }])],
   controllers: [BlogsController],
   providers: [BlogsService],
 })
